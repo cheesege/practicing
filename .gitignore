@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+
+
+#custom
+venv
+.idea
+.vscode
+Cache
+cmake-build-debug

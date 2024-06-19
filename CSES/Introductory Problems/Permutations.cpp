@@ -1,0 +1,35 @@
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+
+int main(){
+    ios::sync_with_stdio(0);cin.tie(0);
+    ll n;
+    cin >> n;
+    if(n==3 || n==2){
+        cout << "NO SOLUTION";
+        return 0;
+    }
+    if(n%2==0){
+        int now = n;
+        for(int i=0;i<n/2-1;i++){
+            now = now-2;
+            cout << now << ' ';
+        }
+        cout << n << ' ';
+        for(int i=1;i<=n;i+=2){
+            cout << i << ' ';
+        }
+    }
+    else{
+        int now = n+1;
+        for(int i=0;i<n/2;i++){
+            now = now-2;
+            cout << now << ' ';
+        }
+        cout << n << ' ';
+        for(int i=1;i<n;i+=2){
+            cout << i << ' ';
+        }
+    }
+}
