@@ -1,23 +1,25 @@
+//working
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
 
-
+bool ans = true;
 int deep;
-bool dfs(int origin,int edge,int from,int start,int end,map<int,vector<int>> walk){
+void dfs(int origin,int edge,int from,int start,int end,map<int,vector<int>> walk){
     for(auto a :walk[start]){
         deep++;
-        if(deep > edge){
-            return true;
+        if(deep>256){
+            return;
         }
         if(start==origin && a==end){
             continue;
         }
         else if(a==end){
-            return false;
+            ans = false;
         }
         if(a!=from) {
-            return dfs(origin, edge, start, a, end, walk);
+            dfs(origin, edge, start, a, end, walk);
+            return;
         }
     }
 }
@@ -67,7 +69,8 @@ int main(){
         }
         else{
             deep = 0;
-            if(dfs(node_a,edge,0,node_a,node_b,walk)){
+            dfs(node_a,edge,0,node_a,node_b,walk);
+            if(ans){
                 cout << "y" << '\n';
             }
             else{
