@@ -38,3 +38,5 @@ venv
 .vscode
 Cache
 cmake-build-debug
+ASOJ-ob
+ASOJ-ob/*
