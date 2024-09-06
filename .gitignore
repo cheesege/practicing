@@ -40,3 +40,4 @@ Cache
 cmake-build-debug
 ASOJ-ob
 ASOJ-ob/*
+CMakeLists.txt
