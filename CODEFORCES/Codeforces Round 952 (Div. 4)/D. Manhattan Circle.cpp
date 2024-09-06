@@ -69,6 +69,4 @@ signed main(){
         }
         cout << (px.first+px.second)/2+1 << ' ' <<(py.first+py.second)/2+1 << '\n';
     }
-}//
-// Created by Eric on 2024/6/12.
-//
+}
