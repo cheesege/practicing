@@ -42,3 +42,4 @@ ASOJ-ob
 ASOJ-ob/*
 kep.cpp
 main.cpp
+CMakeLists.txt
