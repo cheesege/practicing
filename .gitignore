@@ -40,5 +40,7 @@ Cache
 cmake-build-debug
 ASOJ-ob
 ASOJ-ob/*
+kep.cpp
+main.cpp
 CMakeLists.txt
 Codeforces/*/*.txt
